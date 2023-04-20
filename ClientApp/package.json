@@ -4,7 +4,11 @@
   "private": true,
   "dependencies": {
     "@microsoft/signalr": "^7.0.5",
+    "@syncfusion/ej2-icons": "^21.1.37",
+    "@syncfusion/ej2-react-buttons": "^21.1.37",
+    "@syncfusion/ej2-react-calendars": "^21.1.41",
     "@syncfusion/ej2-react-lists": "^21.1.41",
+    "@syncfusion/ej2-react-splitbuttons": "^21.1.41",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
