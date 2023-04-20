@@ -7,6 +7,7 @@ import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
 import { TimePickerComponent } from '@syncfusion/ej2-react-calendars';
 import { DropDownButtonComponent } from '@syncfusion/ej2-react-splitbuttons';
 
+
 const Chat = () => {
     const [ chat, setChat ] = useState([]);
     const [user, setUser] = useState('');
@@ -55,7 +56,6 @@ const Chat = () => {
             dvalue: dvalue,
             tvalue: tvalue
         };
-
         try {
             await  fetch('https://localhost:44367/chat/messages', { 
                 method: 'POST', 
@@ -69,6 +69,8 @@ const Chat = () => {
             console.log('Sending message failed.', e);
         }
     }
+
+
     function listTemplate(data) {
         const sendertemplate = (<div className="settings">
         <div id="content">
@@ -94,6 +96,8 @@ const Chat = () => {
       </div>);
         return <div>{data.user === user ? sendertemplate : receivertemplate}</div>;
     }
+
+
     function btnClick() {
       const value = document.getElementById("inputname").value;
       var message = String(value);
